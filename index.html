@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AAT1 - Sistema de Reservación de Canchas Deportivas</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header class="bg-dark text-white text-center p-4">
+    <h1 id="titulo">AAT1 - Sistema de Reservación de Canchas Deportivas</h1>
+</header>
+
+<section class="hero text-center text-white">
+    <div class="overlay">
+        <h2>Reserva tu cancha en línea</h2>
+        <p>Fútbol, Baloncesto y Voleibol</p>
+    </div>
+</section>
+
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <h3>Nueva Reserva</h3>
+
+            <form id="formReserva">
+
+                <input
+                    class="form-control mb-3"
+                    id="nombre"
+                    placeholder="Nombre Completo"
+                >
+
+                <input
+                    class="form-control mb-3"
+                    id="telefono"
+                    placeholder="Teléfono"
+                >
+
+                <input
+                    class="form-control mb-3"
+                    type="date"
+                    id="fecha"
+                >
+
+                <select
+                    class="form-control mb-3"
+                    id="cancha"
+                >
+                    <option>Fútbol</option>
+                    <option>Baloncesto</option>
+                    <option>Voleibol</option>
+                </select>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary w-100"
+                >
+                    Guardar Reserva
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="card shadow">
+                <div class="card-body text-center">
+
+                    <h3>Estadísticas</h3>
+
+                    <h1 id="total">0</h1>
+
+                    <p>Total de Reservas Registradas</p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr class="my-5">
+
+    <h2 class="text-center mb-4">
+        Historial de Reservas
+    </h2>
+
+    <table id="tabla" class="display table table-striped">
+
+        <thead>
+
+            <tr>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Fecha</th>
+                <th>Cancha</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+            </tr>
+
+        </thead>
+
+        <tbody></tbody>
+
+    </table>
+
+</div>
+
+<section class="container mt-5">
+
+    <h2 class="text-center mb-4">
+        Nuestras Canchas Deportivas
+    </h2>
+
+    <div class="row">
+
+        <div class="col-md-4 mb-4">
+
+            <div class="card shadow">
+
+                <img
+                    src="img/futbol.jpg"
+                    class="card-img-top"
+                    alt="Fútbol"
+                >
+
+                <div class="card-body text-center">
+
+                    <h4>Cancha de Fútbol</h4>
+
+                    <p>
+                        Cancha profesional para entrenamientos y torneos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mb-4">
+
+            <div class="card shadow">
+
+                <img
+                    src="img/voleibol.jpg"
+                    class="card-img-top"
+                    alt="Voleibol"
+                >
+
+                <div class="card-body text-center">
+
+                    <h4>Cancha de Voleibol</h4>
+
+                    <p>
+                        Espacio ideal para competencias y recreación.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mb-4">
+
+            <div class="card shadow">
+
+                <img
+                    src="img/basquetbol.jpg"
+                    class="card-img-top"
+                    alt="Baloncesto"
+                >
+
+                <div class="card-body text-center">
+
+                    <h4>Cancha de Baloncesto</h4>
+
+                    <p>
+                        Instalaciones modernas para partidos y entrenos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="bg-dark text-white text-center p-4 mt-5">
+    Proyecto AAT1 - Sistema de Reservación de Canchas Deportivas-Realizado por: ISMAEL ENRIQUE CORTEZ SUTUC
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
